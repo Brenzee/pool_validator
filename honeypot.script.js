@@ -102,7 +102,7 @@ exports.swapTest = async (erc20address) => {
       `\n\nSwap successful - ${erc20address} is swappable`.green.bold
     );
   } catch (err) {
-    // console.log(`\n\nThis token (${erc20address}) is a HONEYPOT!`.red.bold);
+    console.log(`\n\nThis token (${erc20address}) is a HONEYPOT!`.red.bold);
     throw new Error(`${erc20address} - honeypot!`);
   }
 };
